@@ -1,5 +1,6 @@
 package yob.mbeans;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.EJB;
@@ -29,7 +30,9 @@ public class TransactionMbean {
 		Transaction transaction = new Transaction(); //entity
 		String transactionNo = t.getTransactionNo();
 		double amount = t.getAmount();
-		List<String> types = t.getTypes();
+		ArrayList<String> type = new ArrayList<>();
+		type.add(t.getTypes());
+		List<String> types = type;
 		Account payerAccount = accountRepository.findByNo(t.getFromAccountNo());
 		Account payeeAccount = accountRepository.findByNo(t.getTargetAccountNo());
 		transaction.setTransactionNo(transactionNo);

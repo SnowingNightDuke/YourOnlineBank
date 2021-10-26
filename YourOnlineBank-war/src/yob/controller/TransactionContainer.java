@@ -5,6 +5,8 @@ import java.util.List;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 
+import yob.util.IDUtils;
+
 @Named("transaction")
 @RequestScoped
 public class TransactionContainer {
@@ -13,16 +15,17 @@ public class TransactionContainer {
 	private double amount;
 	private String fromAccountNo;
 	private String targetAccountNo;
-	private List<String> types;
+	private String types;
 	public TransactionContainer() {
 		super();
-		// TODO Auto-generated constructor stub
+	
 	}
 	public String getTransactionNo() {
+		setTransactionNo();
 		return transactionNo;
 	}
-	public void setTransactionNo(String transactionNo) {
-		this.transactionNo = transactionNo;
+	public void setTransactionNo() {
+		this.transactionNo = IDUtils.generateTransactionNo();
 	}
 	public String getTransactionName() {
 		return transactionName;
@@ -48,10 +51,10 @@ public class TransactionContainer {
 	public void setTargetAccountNo(String targetAccountNo) {
 		this.targetAccountNo = targetAccountNo;
 	}
-	public List<String> getTypes() {
+	public String getTypes() {
 		return types;
 	}
-	public void setTypes(List<String> types) {
+	public void setTypes(String types) {
 		this.types = types;
 	}
 }
