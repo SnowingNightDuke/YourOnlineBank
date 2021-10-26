@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<h:outputStylesheet library="css" name="bootstrap.min.css">
+	</h:outputStylesheet>
+	<title>#{titleController.title}</title>
+</h:head>
+<h:body>
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/index.xhtml">Home</h:outputLink></li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
+			<li role="presentation" class="active"><h:outputLink value="#">Account</h:outputLink></li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/transaction/index.xhtml">Transaction</h:outputLink></li>
+		</ul>
+		<div class="navbar navbar-inverse">
+			<div class="navbar-brand">#{titleController.title} - Account Page</div>
+		</div>
+		<h:form>
+			<table class="table table-bordered table-hover">
+				<tr>
+					<td width="250" valign="top">Account No:</td>
+					<td valign="bottom"><h:outputLabel value="#{accountController.account.accountNo}" /></td>
+				</tr>
+				<tr>
+					<td width="250" valign="top">Account Name:</td>
+					<td valign="bottom"><h:outputLabel value="#{accountController.account.accountName}" /></td>
+				</tr>
+				<tr>
+					<td width="250" valign="top">Address:</td>
+					<td valign="bottom"><h:outputLabel value="#{accountController.account.address}" /></td>
+				</tr>
+				<tr>
+					<td width="250" valign="top">Amount:</td>
+					<td valign="bottom"><h:outputLabel value="#{accountController.account.total}" /></td>
+				</tr>
+				<tr>
+					<td width="250" valign="top">Owner:</td>
+					<td valign="bottom"><h:outputLabel value="#{accountController.account.owner.username}" /></td>
+				</tr>
+				<tr>
+					<td width="250" valign="top">Transactions Number:</td>
+					<td valign="bottom"><h:outputLabel value="#{accountController.transactionsNumber}" /></td>
+				</tr>
+				<tr>
+					<td width="250" valign="top">The Last Transaction Out Info:</td>
+					<td valign="bottom"><h:outputLabel value="#{accountController.lastTransactionOutInfo}" /></td>
+				</tr>
+				<tr>
+					<td width="250" valign="top">The Last Transaction In Info:</td>
+					<td valign="bottom"><h:outputLabel value="#{accountController.lastTransactionInInfo}" /></td>
+				</tr>
+			</table>
+			<h:link class="btn btn-primary" outcome="index.xhtml">Close</h:link>
+		</h:form>
+	</div>
+</h:body>
+</html>

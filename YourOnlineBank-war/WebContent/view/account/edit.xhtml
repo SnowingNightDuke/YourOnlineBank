@@ -12,83 +12,57 @@
 <h:body>
 	<div class="container">
 		<ul class="nav nav-tabs">
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/index.xhtml">Home</h:outputLink></li>
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/view/worker/index.xhtml">Worker</h:outputLink>
-			</li>
-			<li role="presentation" class="active"><h:outputLink value="#">Account</h:outputLink>
-			</li>
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/view/transaction/index.xhtml">Transaction</h:outputLink>
-			</li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/index.xhtml">Home</h:outputLink></li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
+			<li role="presentation" class="active"><h:outputLink value="#">Account</h:outputLink></li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/transaction/index.xhtml">Transaction</h:outputLink></li>
 		</ul>
 		<div class="navbar navbar-inverse">
-			<div class="navbar-brand">#{titleController.title} - Worker
-				Page</div>
+			<div class="navbar-brand">#{titleController.title} - Account Page</div>
 		</div>
 		<h:form>
 			<table class="table table-bordered table-striped table-hover">
 				<tr>
 					<td width="150" valign="top">Account No:</td>
-					<td valign="bottom"><h:outputLabel
-							value="#{accountController.account.accountNo}" /></td>
+					<td valign="bottom"><h:outputLabel value="#{accountController.account.accountNo}" /></td>
 				</tr>
 				<tr>
 					<td width="150" valign="top">Account Name:</td>
-					<td valign="bottom"><h:inputText
-							value="#{accountController.account.accountName}"
-							required="true" requiredMessage="Pleaseenter your Account Name" />
+					<td valign="bottom"><h:inputText value="#{accountController.account.accountName}" required="true" requiredMessage="Pleaseenter your Account Name" />
 					</td>
 				</tr>
 				<tr>
 					<td width="150" valign="top">State:</td>
-					<td valign="bottom"><h:inputText id="state"
-							value="#{accountController.account.address.state}"
-							required="true" requiredMessage="Please enter your State" /></td>
+					<td valign="bottom"><h:inputText id="state" value="#{accountController.account.address.state}" required="true" requiredMessage="Please enter your State" /></td>
 					<h:message for="state" />
 				</tr>
 				<tr>
 					<td width="150" valign="top">Street Address:</td>
-					<td valign="bottom"><h:inputText
-							value="#{accountController.account.address.streetAddress}"
-							required="true"
-							requiredMessage="Please enter your Street Address" /></td>
+					<td valign="bottom"><h:inputText value="#{accountController.account.address.streetAddress}" required="true" requiredMessage="Please enter your Street Address" /></td>
 				</tr>
 				<tr>
 					<td width="150" valign="top">Street Number:</td>
-					<td valign="bottom"><h:inputText
-							value="#{accountController.account.address.streetNumber}"
-							required="true" requiredMessage="Please enter your Street Number" />
+					<td valign="bottom"><h:inputText value="#{accountController.account.address.streetNumber}" required="true" requiredMessage="Please enter your Street Number" />
 					</td>
 				</tr>
 				<tr>
 					<td width="150" valign="top">Suburb:</td>
-					<td valign="bottom"><h:inputText
-							value="#{accountController.account.address.suburb}"
-							required="true" requiredMessage="Please enter your Suburb" /></td>
+					<td valign="bottom"><h:inputText value="#{accountController.account.address.suburb}" required="true" requiredMessage="Please enter your Suburb" /></td>
 				</tr>
 				<tr>
 					<td width="150" valign="top">PostCode:</td>
-					<td valign="bottom"><h:inputText
-							value="#{accountController.account.address.postcode}"
-							required="true" requiredMessage="Please enter your PostCode" /></td>
+					<td valign="bottom"><h:inputText value="#{accountController.account.address.postcode}" required="true" requiredMessage="Please enter your PostCode" /></td>
 				</tr>
 				<tr>
 					<td width="150" valign="top">Owner:</td>
-					<td valign="bottom"><h:outputLabel
-							value="#{accountController.account.owner.username}" /></td>
+					<td valign="bottom"><h:outputLabel value="#{accountController.account.owner.username}" /></td>
 				</tr>
 			</table>
-			<h:commandButton
-				action="#{accountMbean.edit(accountController.account)}"
-				value="Save" class="btn btn-primary">
+			<h:commandButton action="#{accountMbean.edit(accountController.account)}" value="Save" class="btn btn-primary">
 				<f:param name="no" value="#{accountController.accountNo}">
 				</f:param>
 			</h:commandButton>
-			<h:link class="btn btn-primary" outcome="index.xhtml">Close</h:link>
+			<h:link class="btn btn-primary" outcome="index.xhtml">Return</h:link>
 		</h:form>
 	</div>
 </h:body>

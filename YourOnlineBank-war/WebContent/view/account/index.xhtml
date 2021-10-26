@@ -11,22 +11,13 @@
 <h:body>
 	<div class="container">
 		<ul class="nav nav-tabs">
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/index.xhtml">Home</h:outputLink></li>
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/view/worker/index.xhtml">Worker</h:outputLink>
-			</li>
-			<li role="presentation" class="active"><h:outputLink value="#">Account</h:outputLink>
-			</li>
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/view/transaction/index.xhtml">Transaction</h:outputLink>
-			</li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/index.xhtml">Home</h:outputLink></li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
+			<li role="presentation" class="active"><h:outputLink value="#">Account</h:outputLink></li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/transaction/index.xhtml">Transaction</h:outputLink></li>
 		</ul>
 		<div class="navbar navbar-inverse">
-			<div class="navbar-brand">#{titleController.title} - Account
-				Page</div>
+			<div class="navbar-brand">#{titleController.title} - Account Page</div>
 		</div>
 		<h:form>
 			<table class="table table-bordered table-striped table-hover">
@@ -56,10 +47,8 @@
 				</ui:repeat>
 			</table>
 			<div>
-				<h:link id="add" value="Add" outcome="add.xhtml"
-					class="btn btn-primary" />
-				<h:commandButton id="Refresh" value="Refresh"
-					action="#{accountApp.updateAccounts()}" class="btn btn-primary"></h:commandButton>
+				<h:link id="add" value="Add" outcome="add.xhtml" class="btn btn-primary" />
+				<h:commandButton id="Refresh" value="Refresh" action="#{accountApp.updateAccounts()}" class="btn btn-primary"></h:commandButton>
 			</div>
 		</h:form>
 	</div>

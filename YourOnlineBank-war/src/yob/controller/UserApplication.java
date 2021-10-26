@@ -56,7 +56,7 @@ public class UserApplication implements Serializable {
 		updateUsers();
 	}
 	public void getByWorker(){
-		this.users = userMbean.getUserByType("worker");
+		this.users = userMbean.getUserByType("woker");
 	}
 	public void getByUser() {
 		this.users = userMbean.getUserByType("user");

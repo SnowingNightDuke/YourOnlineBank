@@ -13,22 +13,13 @@
 <h:body>
 	<div class="container">
 		<ul class="nav nav-tabs">
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/index.xhtml">Home</h:outputLink></li>
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/view/worker/index.xhtml">Worker</h:outputLink>
-			</li>
-			<li role="presentation" class="active"><h:outputLink value="#">Account</h:outputLink>
-			</li>
-			<li role="presentation"><h:outputLink
-					value="#{facesContext.externalContext.requestContextPath}/faces/view/transaction/index.xhtml">Transaction</h:outputLink>
-			</li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/index.xhtml">Home</h:outputLink></li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
+			<li role="presentation" class="active"><h:outputLink value="#">Account</h:outputLink></li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/transaction/index.xhtml">Transaction</h:outputLink></li>
 		</ul>
 		<div class="navbar navbar-inverse">
-			<div class="navbar-brand">#{titleController.title} - Account
-				Adding Page</div>
+			<div class="navbar-brand">#{titleController.title} - Account Page</div>
 		</div>
 		<f:view>
 			<h:form>
@@ -36,97 +27,64 @@
 				<table class="table table-bordered">
 					<tr>
 						<td><h:outputLabel value="Account Name" /></td>
-						<td><h:inputText id="AccountName"
-								value="#{account.accountName}" title="AccountName"
-								required="true" requiredMessage="Please enter your Account Name"
-								validatorMessage="Account Namemust be in 3-20 letters">
+						<td><h:inputText id="AccountName" value="#{account.accountName}" title="AccountName" required="true" requiredMessage="Please enter your Account Name" validatorMessage="Account Namemust be in 3-20 letters">
 								<f:validateLength minimum="3" maximum="20">
 								</f:validateLength>
-							</h:inputText> <br /> <h:message for="AccountName"
-								class="#{!AccountName.valid ? 'label label-warning' : 'none'}" />
+							</h:inputText> <br /> <h:message for="AccountName" class="#{!AccountName.valid ? 'label label-warning' : 'none'}" />
 						</td>
 					</tr>
 					<tr>
 						<td><h:outputLabel value="Street Address" /></td>
-						<td><h:inputText id="StreetAddress"
-								value="#{account.streetAddress}" title="StreetAddress"
-								required="true"
-								requiredMessage="Please enter your StreetAddress"
-								validatorMessage="Passwordmust be in 50 letters">
+						<td><h:inputText id="StreetAddress" value="#{account.streetAddress}" title="StreetAddress" required="true" requiredMessage="Please enter your StreetAddress" validatorMessage="Passwordmust be in 50 letters">
 								<f:validateLength minimum="1" maximum="50">
 								</f:validateLength>
-							</h:inputText> <br /> <h:message for="StreetAddress"
-								class="#{!StreetAddress.valid ? 'label label-warning' : 'none'}" />
+							</h:inputText> <br /> <h:message for="StreetAddress" class="#{!StreetAddress.valid ? 'label label-warning' : 'none'}" />
 						</td>
 					</tr>
 					<tr>
 						<td><h:outputLabel value="Street Number" /></td>
-						<td><h:inputText id="StreetNumber"
-								value="#{account.streetNumber}" title="StreetNumber"
-								required="true" requiredMessage="Please enter your StreetNumber"
-								validatorMessage="Password mustbe in 10 letters">
+						<td><h:inputText id="StreetNumber" value="#{account.streetNumber}" title="StreetNumber" required="true" requiredMessage="Please enter your StreetNumber" validatorMessage="Password mustbe in 10 letters">
 								<f:validateLength minimum="1" maximum="10">
 								</f:validateLength>
-							</h:inputText> <br /> <h:message for="StreetNumber"
-								class="#{!StreetNumber.valid ? 'label label-warning' : 'none'}" />
+							</h:inputText> <br /> <h:message for="StreetNumber" class="#{!StreetNumber.valid ? 'label label-warning' : 'none'}" />
 						</td>
 					</tr>
 					<tr>
 						<td><h:outputLabel value="Suburb" /></td>
-						<td><h:inputText id="Suburb" value="#{account.suburb}"
-								title="Suburb" required="true"
-								requiredMessage="Please enteryour Suburb"
-								validatorMessage="Suburb must be in 3-20 letters">
+						<td><h:inputText id="Suburb" value="#{account.suburb}" title="Suburb" required="true" requiredMessage="Please enteryour Suburb" validatorMessage="Suburb must be in 3-20 letters">
 								<f:validateLength minimum="3" maximum="20">
 								</f:validateLength>
-							</h:inputText> <br /> <h:message for="Suburb"
-								class="#{!Suburb.valid ?'label label-warning' : 'none'}" /></td>
+							</h:inputText> <br /> <h:message for="Suburb" class="#{!Suburb.valid ?'label label-warning' : 'none'}" /></td>
 					</tr>
 					<tr>
 						<td><h:outputLabel value="Postcode" /></td>
-						<td><h:inputText id="Postcode" value="#{account.postcode}"
-								title="Postcode" required="true"
-								requiredMessage="Pleaseenter your Postcode"
-								validatorMessage="Postcode must be in 10 letters">
+						<td><h:inputText id="Postcode" value="#{account.postcode}" title="Postcode" required="true" requiredMessage="Pleaseenter your Postcode" validatorMessage="Postcode must be in 10 letters">
 								<f:validateLength minimum="1" maximum="10">
 								</f:validateLength>
-							</h:inputText> <br /> <h:message for="Postcode"
-								class="#{!Postcode.valid ? 'label label-warning' : 'none'}" />
+							</h:inputText> <br /> <h:message for="Postcode" class="#{!Postcode.valid ? 'label label-warning' : 'none'}" />
 						</td>
 					</tr>
 					<tr>
 						<td><h:outputLabel value="State" /></td>
-						<td><h:inputText id="State" value="#{account.state}"
-								title="State" required="true"
-								requiredMessage="Please enter your State"
-								validatorMessage="State must be in 3-20 letters">
+						<td><h:inputText id="State" value="#{account.state}" title="State" required="true" requiredMessage="Please enter your State" validatorMessage="State must be in 3-20 letters">
 								<f:validateLength minimum="3" maximum="20">
 								</f:validateLength>
-							</h:inputText> <br /> <h:message for="State"
-								class="#{!State.valid ?'label label-warning' : 'none'}" /></td>
+							</h:inputText> <br /> <h:message for="State" class="#{!State.valid ?'label label-warning' : 'none'}" /></td>
 					</tr>
 					<tr>
 						<td><h:outputLabel value="Total" /></td>
-						<td><h:inputText id="Total" value="#{account.total}"
-								title="Total" required="true"
-								requiredMessage="Please enter your Total">
-							</h:inputText> <br /> <h:message for="Total"
-								class="#{!Total.valid ?'label label-warning' : 'none'}" /></td>
+						<td><h:inputText id="Total" value="#{account.total}" title="Total" required="true" requiredMessage="Please enter your Total">
+							</h:inputText> <br /> <h:message for="Total" class="#{!Total.valid ?'label label-warning' : 'none'}" /></td>
 					</tr>
 					<tr>
 						<td><h:outputLabel value="Owner" for="Owner" /></td>
-						<td><h:selectOneMenu value="#{account.owner.uuid}"
-								id="Owner">
-								<f:selectItems
-									value="#{accountApp.userMbean.allAviliableUser}" var="a"
-									itemValue="#{a.uuid}" itemLabel="#{a.username}" />
-							</h:selectOneMenu> <br /> <h:message for="Owner"
-								class="#{!Owner.valid ?'label label-warning' : 'none'}" /></td>
+						<td><h:selectOneMenu value="#{account.owner.uuid}" id="Owner">
+								<f:selectItems value="#{accountApp.userMbean.allAviliableUser}" var="a" itemValue="#{a.uuid}" itemLabel="#{a.username}" />
+							</h:selectOneMenu> <br /> <h:message for="Owner" class="#{!Owner.valid ?'label label-warning' : 'none'}" /></td>
 					</tr>
 				</table>
-				<h:commandButton action="#{accountApp.add(account)}" value="Submit"
-					class="btn btn-primary" />
-				<h:link outcome="index.xhtml" class="btn btn-primary">Close</h:link>
+				<h:commandButton action="#{accountApp.add(account)}" value="Submit" class="btn btn-primary" />
+				<h:link outcome="index.xhtml" class="btn btn-primary">Return</h:link>
 			</h:form>
 		</f:view>
 	</div>

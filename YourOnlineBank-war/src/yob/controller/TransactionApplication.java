@@ -17,8 +17,7 @@ public class TransactionApplication {
 	private TransactionMbean transactionMbean;
 	public TransactionApplication() throws Exception {
 		this.transactions = new ArrayList<Transaction>();
-		this.transactionMbean =
-				FacesContextUtils.getManagedBean("transactionMbean");
+		this.transactionMbean = FacesContextUtils.getManagedBean("transactionMbean");
 		updateTransactions();
 	}
 	public List<Transaction> getTransactions() {
@@ -42,8 +41,7 @@ public class TransactionApplication {
 	public void remove(Transaction transaction) throws Exception {
 		try {
 			transactionMbean.removeTransactionByNo(transaction.getTransactionNo());
-			FacesContextUtils.showMessage("Transaction(" +
-					transaction.getTransactionNo() + ") has been removed.");
+			FacesContextUtils.showMessage("Transaction(" + transaction.getTransactionNo() + ") has been removed.");
 		} catch (Exception e) {
 			FacesContextUtils.showMessage("Remove failed...");
 			e.printStackTrace();
@@ -51,10 +49,8 @@ public class TransactionApplication {
 		updateTransactions();
 	}
 	public void add(TransactionContainer transactionContainer) throws Exception {
-		UserAccountController userAccountController =
-				FacesContextUtils.getManagedBean("userAccountController");
-		TargetAccountController targetAccountController =
-				FacesContextUtils.getManagedBean("targetAccountController");
+		UserAccountController userAccountController = FacesContextUtils.getManagedBean("userAccountController");
+		TargetAccountController targetAccountController = FacesContextUtils.getManagedBean("targetAccountController");
 		transactionContainer.setFromAccountNo(userAccountController.getAccountNo());
 		transactionContainer.setTargetAccountNo(targetAccountController.getAccountNo());
 		transactionMbean.addTransaction(transactionContainer);
