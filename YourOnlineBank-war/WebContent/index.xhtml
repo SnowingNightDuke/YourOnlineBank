@@ -11,23 +11,13 @@
 <h:body>
 	<div class="container">
 		<ul class="nav nav-tabs">
-			<li role="presentation" class="active"><h:outputLink value="#">Home</h:outputLink>
+			<li role="presentation" class="active"><h:outputLink value="#">Home</h:outputLink></li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/worker/index.xhtml">Worker</h:outputLink>
 			</li>
-			<li role="presentation"><h:outputLink
-					value="#
-{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
-			<li role="presentation"><h:outputLink
-					value="#
-{facesContext.externalContext.requestContextPath}/faces/view/worker/index.xhtml">Worker</h:outputLink>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/account/index.xhtml">Account</h:outputLink>
 			</li>
-			<li role="presentation"><h:outputLink
-					value="#
-{facesContext.externalContext.requestContextPath}/faces/view/account/index.xhtml">Account</h:outputLink>
-			</li>
-			<li role="presentation"><h:outputLink
-					value="#
-{facesContext.externalContext.requestContextPath}/faces/view/transaction/index.x
-html">Transaction</h:outputLink>
+			<li role="presentation"><h:outputLink value="#{facesContext.externalContext.requestContextPath}/faces/view/transaction/index.xhtml">Transaction</h:outputLink>
 			</li>
 		</ul>
 		<div class="navbar navbar-inverse">

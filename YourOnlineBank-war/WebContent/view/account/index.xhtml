@@ -46,9 +46,9 @@
 						<td><h:outputText value="#{a.address}" /></td>
 						<td><h:outputText value="#{a.total}" /></td>
 						<td><h:outputText value="#{a.owner.username}" /></td>
-						<td><h:link value="View | " outcome="accountDetails.xhtml">
+						<td><h:link value="View | " outcome="detail.xhtml">
 								<f:param name="no" value="#{a.accountNo}" />
-							</h:link> <h:link value="Edit | " outcome="accountEdit.xhtml">
+							</h:link> <h:link value="Edit | " outcome="edit.xhtml">
 								<f:param name="no" value="#{a.accountNo}" />
 							</h:link> <h:commandLink action="#{accountApp.remove(a)}" value="Delete" />
 						</td>
@@ -56,9 +56,9 @@
 				</ui:repeat>
 			</table>
 			<div>
-				<h:link id="add" value="Add" outcome="accountAdd.xhtml"
+				<h:link id="add" value="Add" outcome="add.xhtml"
 					class="btn btn-primary" />
-				<h:commandButton id="viewAll" value="View All"
+				<h:commandButton id="Refresh" value="Refresh"
 					action="#{accountApp.updateAccounts()}" class="btn btn-primary"></h:commandButton>
 			</div>
 		</h:form>

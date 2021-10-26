@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<h:outputStylesheet library="css" name="bootstrap.min.css" />
+	<title>#{titleController.title}</title>
+</h:head>
+<h:body>
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li role="presentation"><h:outputLink
+					value="#{facesContext.externalContext.requestContextPath}/faces/index.xhtml">Home</h:outputLink></li>
+			<li role="presentation"><h:outputLink
+					value="#{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
+			<li role="presentation"><h:outputLink
+					value="#{facesContext.externalContext.requestContextPath}/faces/view/worker/index.xhtml">Worker</h:outputLink>
+			</li>
+			<li role="presentation" class="active"><h:outputLink value="#">Account</h:outputLink>
+			</li>
+			<li role="presentation"><h:outputLink
+					value="#{facesContext.externalContext.requestContextPath}/faces/view/transaction/index.xhtml">Transaction</h:outputLink>
+			</li>
+		</ul>
+		<div class="navbar navbar-inverse">
+			<div class="navbar-brand">#{titleController.title} - Account
+				Page</div>
+		</div>
+		<h:form>
+			<table class="table table-bordered table-striped table-hover">
+				<!-- title display -->
+				<tr>
+					<th><h:outputLabel value="Account No" /></th>
+					<th><h:outputLabel value="Account Name" /></th>
+					<th><h:outputLabel value="Address" /></th>
+					<th><h:outputLabel value="Amount" /></th>
+					<th><h:outputLabel value="Owner" /></th>
+					<th><h:outputLabel value="Operation" /></th>
+				</tr>
+				<ui:repeat var="a" value="#{accountApp.accounts}">
+					<tr>
+						<td><h:outputText value="#{a.accountNo}" /></td>
+						<td><h:outputText value="#{a.accountName}" /></td>
+						<td><h:outputText value="#{a.address}" /></td>
+						<td><h:outputText value="#{a.total}" /></td>
+						<td><h:outputText value="#{a.owner.username}" /></td>
+						<td><h:link value="View | " outcome="accountDetails.xhtml">
+								<f:param name="no" value="#{a.accountNo}" />
+							</h:link> <h:link value="Edit | " outcome="accountEdit.xhtml">
+								<f:param name="no" value="#{a.accountNo}" />
+							</h:link> <h:commandLink action="#{accountApp.remove(a)}" value="Delete" />
+						</td>
+					</tr>
+				</ui:repeat>
+			</table>
+			<div>
+				<h:link id="add" value="Add" outcome="accountAdd.xhtml"
+					class="btn btn-primary" />
+				<h:commandButton id="viewAll" value="View All"
+					action="#{accountApp.updateAccounts()}" class="btn btn-primary"></h:commandButton>
+			</div>
+		</h:form>
+	</div>
+</h:body>
+</html>

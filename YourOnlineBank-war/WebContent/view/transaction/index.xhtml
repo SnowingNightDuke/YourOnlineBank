@@ -50,9 +50,9 @@
 						<td><h:outputText value="#{t.userAccount.accountNo}" /></td>
 						<td><h:outputText value="#{t.targetAccount.accountNo}" /></td>
 						<td><h:link value="View | "
-								outcome="transactionDetails.xhtml">
+								outcome="detail.xhtml">
 								<f:param name="no" value="#{t.transactionNo}" />
-							</h:link> <h:link value="Edit | " outcome="transactionEdit.xhtml">
+							</h:link> <h:link value="Edit | " outcome="edit.xhtml">
 								<f:param name="no" value="#{t.transactionNo}" />
 							</h:link> <h:commandLink action="#{transactionApp.remove(t)}"
 								value="Delete" /></td>
@@ -60,9 +60,9 @@
 				</ui:repeat>
 			</table>
 			<div>
-				<h:link value="Start Transfer" outcome="transferPage.xhtml"
+				<h:link value="Start Transfer" outcome="add.xhtml"
 					class="btn btn-primary" />
-				<h:commandButton id="viewAll" value="View All"
+				<h:commandButton id="Refresh" value="Refresh"
 					action="#{transactionApp.updateTransactions()}"
 					class="btn btn-primary">
 				</h:commandButton>

@@ -44,9 +44,9 @@
 						<td><h:outputText value="#{u.username}" /></td>
 						<td><h:outputText value="#{u.password}" /></td>
 						<td><h:outputText value="#{u.type}" /></td>
-						<td><h:link value="View | " outcome="userDetails.xhtml">
+						<td><h:link value="View | " outcome="detail.xhtml">
 								<f:param name="uuid" value="#{u.uuid}" />
-							</h:link> <h:link value="Edit | " outcome="userEdit.xhtml">
+							</h:link> <h:link value="Edit | " outcome="edit.xhtml">
 								<f:param name="uuid" value="#{u.uuid}" />
 							</h:link> <h:commandLink action="#{userApp.remove(u.uuid)}"
 								value="Delete" /></td>
@@ -55,16 +55,13 @@
 			</table>
 
 			<div>
-				<h:link id="add" value="Add" outcome="userAdd.xhtml"
+				<h:link id="add" value="Add" outcome="add.xhtml"
 					class="btn btn-primary" />
-				<h:commandButton id="viewAll" value="View All"
-					action="#{userApp.updateUsers()}" class="btn btn-primary"></h:commandButton>
+				<h:commandButton id="Refresh" value="Refresh" action="#{userApp.updateUsers()}" class="btn btn-primary"></h:commandButton>
 			</div>
 			<div>
-				<h:commandButton id="viewWorker" value="View Workers"
-					action="#{userApp.getByWorker()}" class="btn btn-primary"></h:commandButton>
-				<h:commandButton id="viewUser" value="View Users"
-					action="#{userApp.getByUser()}" class="btn btn-primary"></h:commandButton>
+				<h:commandButton id="viewWorker" value="View Workers" action="#{userApp.getByWorker()}" class="btn btn-primary"></h:commandButton>
+				<h:commandButton id="viewUser" value="View Users" action="#{userApp.getByUser()}" class="btn btn-primary"></h:commandButton>
 			</div>
 		</h:form>
 	</div>

@@ -19,6 +19,6 @@ public class TitleController {
 	}
 	@PostConstruct
 	public void init() {
-		this.title = "Banking Enterprise Application";
+		this.title = "Your Online Bank";
 	}
 }
