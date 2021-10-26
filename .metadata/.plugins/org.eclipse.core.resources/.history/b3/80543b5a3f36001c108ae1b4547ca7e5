@@ -1,0 +1,17 @@
+package yob.mbeans;
+
+import javax.ejb.EJB;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
+
+import yob.repository.AccountRepository;
+import yob.repository.UserRepository;
+
+@Named("transactionMbean")
+@RequestScoped
+public class TransactionMbean {
+	@EJB
+	AccountRepository accountRepository;
+	@EJB
+	UserRepository userRepository;
+}

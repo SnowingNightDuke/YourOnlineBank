@@ -1,0 +1,5 @@
+package yob.repository;
+
+public class TransactionRepositoryImpl {
+
+}

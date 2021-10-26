@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<h:outputStylesheet library="css" name="bootstrap.min.css" />
+	<title>#{titleController.title}</title>
+</h:head>
+<h:body>
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li role="presentation"><h:outputLink
+					value="#{facesContext.externalContext.requestContextPath}/faces/index.xhtml">Home</h:outputLink></li>
+			<li role="presentation"><h:outputLink
+					value="#{facesContext.externalContext.requestContextPath}/faces/view/user/index.xhtml">User</h:outputLink></li>
+			<li role="presentation"><h:outputLink
+					value="#{facesContext.externalContext.requestContextPath}/faces/view/worker/index.xhtml">Worker</h:outputLink>
+			</li>
+			<li role="presentation"><h:outputLink
+					value="#{facesContext.externalContext.requestContextPath}/faces/view/account/index.xhtml">Account</h:outputLink>
+			</li>
+			<li role="presentation" class="active"><h:outputLink value="#">Transaction</h:outputLink>
+			</li>
+		</ul>
+		<div class="navbar navbar-inverse">
+			<div class="navbar-brand">#{titleController.title} -
+				Transaction Page</div>
+		</div>
+		<h:form>
+			<table class="table table-bordered table-striped table-hover">
+				<tr>
+					<th><h:outputLabel value="Transaction No" /></th>
+					<th><h:outputLabel value="Transaction Name" /></th>
+					<th><h:outputLabel value="Types" /></th>
+					<th><h:outputLabel value="Amount" /></th>
+					<!-- <th><h:outputLabel value="Time" /></th> -->
+					<th><h:outputLabel value="From" /></th>
+					<th><h:outputLabel value="To" /></th>
+					<th><h:outputLabel value="Operation" /></th>
+				</tr>
+				<ui:repeat var="t" value="#{transactionApp.transactions}">
+					<tr>
+						<td><h:outputText value="#{t.transactionNo}" /></td>
+						<td><h:outputText value="#{t.transactionName}" /></td>
+						<td><h:outputText value="#{t.types}" /></td>
+						<td><h:outputText value="#{t.amount}" /></td>
+						<!-- <td><h:outputText value="#{t.time}" /></td> -->
+						<td><h:outputText value="#{t.userAccount.accountNo}" /></td>
+						<td><h:outputText value="#{t.targetAccount.accountNo}" /></td>
+						<td><h:link value="View | "
+								outcome="transactionDetails.xhtml">
+								<f:param name="no" value="#{t.transactionNo}" />
+							</h:link> <h:link value="Edit | " outcome="transactionEdit.xhtml">
+								<f:param name="no" value="#{t.transactionNo}" />
+							</h:link> <h:commandLink action="#{transactionApp.remove(t)}"
+								value="Delete" /></td>
+					</tr>
+				</ui:repeat>
+			</table>
+			<div>
+				<h:link value="Start Transfer" outcome="transferPage.xhtml"
+					class="btn btn-primary" />
+				<h:commandButton id="viewAll" value="View All"
+					action="#{transactionApp.updateTransactions()}"
+					class="btn btn-primary">
+				</h:commandButton>
+			</div>
+		</h:form>
+	</div>
+</h:body>
+</html>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects>
+  <project name="YourOnlineBank-common"/>
+ </depends-on-projects>
+ <used-by-projects/>
+ <paths>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.servlet.jsp.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/org.eclipse.persistence.jpa.modelgen.processor.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.xml.rpc-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/cdi-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-mvc-jsp.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jersey-mvc-jsp.jar/meta-inf/taglib.tld" project="YourOnlineBank-common"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/org.eclipse.persistence.antlr.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/ha-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-container-servlet.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-media-json-jettison.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.jms-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.batch-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.el.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.resource-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-media-moxy.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/org.eclipse.persistence.jpa.jpql.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-mvc-connector.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/endorsed/webservices-api-osgi.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.json.bind-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-media-json-processing.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/endorsed/javax.annotation-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.security.enterprise-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-mvc.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-container-grizzly2-http.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.faces.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/html_basic.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/jsf_core.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.taglib.xml" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.tld" project="YourOnlineBank-common"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/webservices.security.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/org.eclipse.persistence.asm.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-common.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.ws.rs-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/mq/lib/jaxm-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/org.eclipse.persistence.jpa.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.security.auth.message-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-server.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.enterprise.concurrent.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-bean-validation.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/org.eclipse.persistence.oracle.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/endorsed/grizzly-npn-bootstrap.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.json.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-cdi1x-transaction.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-hk2.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-media-sse.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.servlet.jsp-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.inject.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-media-multipart.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/glassfish-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.security.jacc-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.ejb-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-media-jaxb.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.enterprise.deploy-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.interceptor-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-media-json-jackson.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-entity-filtering.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.mail.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-cdi1x-servlet.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.management.j2ee-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/org.eclipse.persistence.moxy.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.xml.registry-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.transaction-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jaxb-osgi.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-media-json-binding.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.servlet.jsp.jstl-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/webservices-extra-jdk-packages.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.websocket-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-client.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/org.eclipse.persistence.core.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/endorsed/jaxb-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jaxb-extra-osgi.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.persistence.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/webservices-osgi.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.servlet.jsp.jstl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/c-1_0-rt.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/c-1_0.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/c.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/fmt-1_0-rt.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/fmt-1_0.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/fmt.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/fn.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/permittedtaglibs.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/scriptfree.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/sql-1_0-rt.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/sql-1_0.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/sql.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/x-1_0-rt.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/x-1_0.tld" project="YourOnlineBank-common"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.servlet.jsp.jstl.jar/meta-inf/x.tld" project="YourOnlineBank-common"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/org.eclipse.persistence.dbws.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.enterprise.concurrent-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/weld-osgi-bundle.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.servlet-api.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/javax.security.enterprise.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-gf-ejb.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/bean-validator.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-cdi1x.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/webservices-connector.jar"/>
+  <path value="E:/Course/Semester_3/FIT5042/glassfish-5.0/glassfish5/glassfish/modules/jersey-container-servlet-core.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jboss.cdi.core"/>
+  <core validator-id="batch-verification"/>
+  <el/>
+ </validation>
+ <aliases/>
+ <includes/>
+ <uris/>
+</kb-project>

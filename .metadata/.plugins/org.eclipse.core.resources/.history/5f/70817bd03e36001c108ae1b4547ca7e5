@@ -1,0 +1,5 @@
+package yob.mbeans;
+
+public class TransactionMbean {
+
+}

@@ -1,0 +1,20 @@
+package yob.repository;
+
+import java.util.List;
+
+import javax.ejb.Remote;
+import javax.transaction.Transaction;
+
+import yob.repository.entities.Account;
+
+@Remote
+public interface TransactionRepository {
+	void add(Transaction transaction);
+	void del(String no);
+	void update(Transaction transaction);
+	Transaction findByNo(String no);
+	List<Transaction> findAll();
+	List<Transaction> findAllTransactionsByAccount(Account account);
+	List<Transaction> findTransactionsOutByAccount(Account account);
+	List<Transaction> findTransactionsInByAccount(Account account);
+}
