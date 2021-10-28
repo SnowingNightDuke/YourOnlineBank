@@ -30,7 +30,7 @@ public class UserAccountController implements Serializable {
 				FacesContextUtils.getManagedBean("accountMbean");
 		Account account = accountMbean.getAccoutByNo(accountNo);
 		if (account == null) {
-			return "***************************";
+			return "Account Not Found";
 		}else {
 			return account.getAccountNo();
 		}
@@ -50,7 +50,7 @@ public class UserAccountController implements Serializable {
 				FacesContextUtils.getManagedBean("accountMbean");
 		Account account = accountMbean.getAccoutByNo(accountNo);
 		if (account == null) {
-			return "Please Search First";
+			return "Account Not Found";
 		}else {
 			return account.getOwner().getUsername();
 		}
@@ -60,7 +60,7 @@ public class UserAccountController implements Serializable {
 				FacesContextUtils.getManagedBean("accountMbean");
 		Account account = accountMbean.getAccoutByNo(accountNo);
 		if (account == null) {
-			return "***************************";
+			return "Account Not Found";
 		}else {
 			return String.valueOf(account.getTotal());
 		}

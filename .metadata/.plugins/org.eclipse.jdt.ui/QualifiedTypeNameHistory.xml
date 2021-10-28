@@ -19,7 +19,6 @@
 <fullyQualifiedTypeName name="javax.ejb.Remote"/>
 <fullyQualifiedTypeName name="javax.transaction.Transaction"/>
 <fullyQualifiedTypeName name="java.util.UUID"/>
-<fullyQualifiedTypeName name="yob.util.IDUtils"/>
 <fullyQualifiedTypeName name="javax.persistence.Query"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
@@ -35,7 +34,6 @@
 <fullyQualifiedTypeName name="javax.ejb.EJB"/>
 <fullyQualifiedTypeName name="yob.repository.AccountRepository"/>
 <fullyQualifiedTypeName name="javax.enterprise.context.ApplicationScoped"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.enterprise.context.RequestScoped"/>
 <fullyQualifiedTypeName name="javax.enterprise.context.SessionScoped"/>
 <fullyQualifiedTypeName name="javax.inject.Named"/>
@@ -48,4 +46,6 @@
 <fullyQualifiedTypeName name="yob.util.FacesContextUtils"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="yob.mbeans.TransactionMbean"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="yob.util.IDUtils"/>
 </qualifiedTypeNameHistroy>

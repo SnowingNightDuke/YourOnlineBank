@@ -26,7 +26,7 @@
 					<br />
 					<div class="input-group">
 						<h:inputText id="inputUserAccountNo" class="form-control" value="#{userAccountController.accountNo}" />
-						<span class="input-group-btn"> <h:commandButton value="Search!" class="btn btn-primary">
+						<span class="input-group-btn"> <h:commandButton value="Search" class="btn btn-primary">
 								<f:ajax execute="inputUserAccountNo" render="userAccountNo userAccountName userAccountOwner userAccountTotal"> </f:ajax>
 							</h:commandButton>
 						</span> <span class="input-group-btn"> <h:commandButton action="#{userAccountController.clear()}" value="Clear" class="btn btn-primary" />
@@ -60,7 +60,7 @@
 					<div class="input-group">
 						<h:inputText id="inputTargetAccountNo" value="#{targetAccountController.accountNo}" class="form-control" />
 						<span class="input-group-btn"> 
-						<h:commandButton value="Search!" class="btn btn-primary">
+						<h:commandButton value="Search" class="btn btn-primary">
 								<f:ajax execute="inputTargetAccountNo" render="targetAccountNo targetAccountName targetAccountOwner"></f:ajax>
 							</h:commandButton>
 						</span> <span class="input-group-btn"> <h:commandButton action="#{targetAccountController.clear()}" value="Clear" class="btn btn-primary" />
@@ -90,8 +90,8 @@
 					<h1>Create Transaction</h1>
 					<table class="table table-bordered">
 						<tr>
-							<td><h:outputLabel value="Transaction Name" /></td>
-							<td><h:inputText id="TransactionName" value="#{transaction.transactionName}" title="Transaction Name" required="true" requiredMessage="Please enter your Transaction Name" validatorMessage="Transaction Name must be in 3-20 letters">
+							<td><h:outputLabel value="Description" /></td>
+							<td><h:inputText id="TransactionName" value="#{transaction.transactionName}" title="Transaction Name" required="true" requiredMessage="Please enter your Transaction Name" validatorMessage="Description must have 3-20 characters">
 									<f:validateLength minimum="3" maximum="20"></f:validateLength>
 								</h:inputText> <br /> <h:message for="TransactionName" class="#{!TransactionName.valid ? 'label label-warning' : 'none'}" />
 							</td>

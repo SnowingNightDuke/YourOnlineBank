@@ -27,7 +27,7 @@ public class TargetAccountController implements Serializable {
 				FacesContextUtils.getManagedBean("accountMbean");
 		Account account = accountMbean.getAccoutByNo(accountNo);
 		if (account == null) {
-			return "***************************";
+			return "Target Account Not Found";
 		} else {
 			return account.getAccountNo();
 		}
@@ -37,7 +37,7 @@ public class TargetAccountController implements Serializable {
 				FacesContextUtils.getManagedBean("accountMbean");
 		Account account = accountMbean.getAccoutByNo(accountNo);
 		if (account == null) {
-			return "Input Account To Transfer";
+			return "Target Account Not Found";
 		} else {
 			return account.getAccountName();
 		}
@@ -47,7 +47,7 @@ public class TargetAccountController implements Serializable {
 				FacesContextUtils.getManagedBean("accountMbean");
 		Account account = accountMbean.getAccoutByNo(accountNo);
 		if (account == null) {
-			return "***************************";
+			return "Target Account Not Found";
 		} else {
 			return account.getOwner().getUsername();
 		}
