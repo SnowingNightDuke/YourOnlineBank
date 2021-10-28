@@ -26,7 +26,7 @@
 					<th><h:outputLabel value="Account No" /></th>
 					<th><h:outputLabel value="Account Name" /></th>
 					<th><h:outputLabel value="Address" /></th>
-					<th><h:outputLabel value="Total Balance" /></th>
+					<th><h:outputLabel value="Amount" /></th>
 					<th><h:outputLabel value="Owner" /></th>
 					<th><h:outputLabel value="Operation" /></th>
 				</tr>

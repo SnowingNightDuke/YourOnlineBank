@@ -47,7 +47,7 @@
 							<td valign="bottom"><h:outputText id="userAccountOwner" value="#{userAccountController.userAccountOwner}" /></td>
 						</tr>
 						<tr>
-							<td width="150" valign="top">Total Balance:</td>
+							<td width="150" valign="top">Total:</td>
 							<td valign="bottom"><h:outputText id="userAccountTotal" value="#{userAccountController.userAccountTotal}" /></td>
 						</tr>
 					</table>

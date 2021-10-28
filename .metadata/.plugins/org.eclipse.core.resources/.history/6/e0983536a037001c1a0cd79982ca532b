@@ -6,9 +6,6 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
 
 import yob.repository.entities.Account;
 import yob.repository.entities.Transaction;
@@ -52,15 +49,9 @@ public class TransactionRepositoryImpl implements TransactionRepository {
 	}
 	@Override
 	public List<Transaction> findTransactionsOutByAccount(Account account) {
-//		Query createQuery = em.createQuery("select t from transactions t where t.userAccount = :taccount");
-//				createQuery.setParameter("taccount", account);
-//				return createQuery.getResultList();
-		CriteriaBuilder builder = em.getCriteriaBuilder();
-		CriteriaQuery q = builder.createQuery(Transaction.class);
-		Root<Transaction> t = q.from(Transaction.class);
-		q.select(t).where(builder.equal(t.get("targetAccount").as(String.class), account));
-		List<Transaction> transactions = em.createQuery(q).getResultList();
-		return transactions;
+		Query createQuery = em.createQuery("select t from transactions t where t.userAccount = :taccount");
+				createQuery.setParameter("taccount", account);
+				return createQuery.getResultList();
 	}
 	@Override
 	public List<Transaction> findTransactionsInByAccount(Account account) {
