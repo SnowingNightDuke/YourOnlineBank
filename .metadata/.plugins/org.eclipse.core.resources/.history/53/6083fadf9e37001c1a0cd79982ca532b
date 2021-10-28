@@ -55,6 +55,5 @@ public class TransactionApplication {
 		transactionContainer.setTargetAccountNo(targetAccountController.getAccountNo());
 		transactionMbean.addTransaction(transactionContainer);
 		FacesContextUtils.showMessage("Transaction made!");
-		transactionMbean.processTransaction(transactionContainer);
 	}
 }

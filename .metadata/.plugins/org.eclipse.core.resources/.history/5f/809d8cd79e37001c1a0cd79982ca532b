@@ -63,14 +63,4 @@ public class TransactionMbean {
 		transactionRepository.update(t);
 		FacesContextUtils.showMessage("Successfully edited");
 	}
-
-	public void processTransaction(TransactionContainer t) {
-		// TODO Auto-generated method stub
-		Account payerAccount = accountRepository.findByNo(t.getFromAccountNo());
-		Account payeeAccount = accountRepository.findByNo(t.getTargetAccountNo());
-		payerAccount.setTotal(payerAccount.getTotal() - t.getAmount());
-		payeeAccount.setTotal(payeeAccount.getTotal() + t.getAmount());
-		accountRepository.update(payeeAccount);
-		accountRepository.update(payerAccount);
-	}
 }
