@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="types"/>
+		<item key="selection" value="ajax"/>
 		<list key="findhistory">
+			<item value="ajax"/>
 			<item value="types"/>
 			<item value="TransactionLocal"/>
 		</list>

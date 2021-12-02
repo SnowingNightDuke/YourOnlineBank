@@ -48,4 +48,7 @@
 <fullyQualifiedTypeName name="yob.mbeans.TransactionMbean"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="yob.util.IDUtils"/>
+<fullyQualifiedTypeName name="javax.persistence.criteria.CriteriaBuilder"/>
+<fullyQualifiedTypeName name="javax.persistence.criteria.CriteriaQuery"/>
+<fullyQualifiedTypeName name="javax.persistence.criteria.Root"/>
 </qualifiedTypeNameHistroy>

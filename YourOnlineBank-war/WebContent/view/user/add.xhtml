@@ -28,16 +28,14 @@
 					<tr>
 						<td><h:outputLabel value="Username" /></td>
 						<td><h:inputText id="Username" value="#{user.username}" title="Username" required="true" requiredMessage="Please enteryour Username" validatorMessage="Username must be in 3-20 letters">
-								<f:validateLength minimum="3" maximum="20">
-								</f:validateLength>
+								<f:validateLength minimum="3" maximum="20"></f:validateLength>	
 							</h:inputText> <br /> <h:message for="Username" class="#{!Username.valid ? 'label label-warning' : 'none'}" />
 						</td>
 					</tr>
 					<tr>
 						<td><h:outputLabel value="Password" /></td>
 						<td><h:inputText id="Password" value="#{user.password}" title="Password" required="true" requiredMessage="Please enteryour Password" validatorMessage="Password must be in 3-20 letters">
-								<f:validateLength minimum="3" maximum="20">
-								</f:validateLength>
+								<f:validateLength minimum="3" maximum="20"></f:validateLength>	
 							</h:inputText> <br /> <h:message for="Password" class="#{!Password.valid ? 'label label-warning' : 'none'}" />
 						</td>
 					</tr>

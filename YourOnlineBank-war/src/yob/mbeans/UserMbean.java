@@ -52,8 +52,11 @@ public class UserMbean {
 		userRepository.add(user);
 	}
 	public void add(UserContainer userContainer) {
-		User user = convertToUser(userContainer);
-		this.add(user);
+		
+				User user = convertToUser(userContainer);
+				this.add(user);
+			
+		
 	}
 	public User convertToUser(UserContainer userContainer) {
 		return new User(userContainer.getUsername(),
